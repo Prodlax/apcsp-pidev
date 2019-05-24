@@ -1,16 +1,20 @@
 #include <stdio.h>
 #include <math.h>
 
+
+float areaOfCircle(float r)
+{
+float a  = r*r*M_PI;
+
+return(a); 
+}
+
 int main()
 {
-float r;
-float a;
-
-r = 3.5;
-for (int i = 0; i < 10; i++)
+for (float i = 3.5; i <= 12.5; i++)
 {
-a = r * r * M_PI;
-printf("The area of a circle with the radius of %f is %f\n", r, a);
+float poo = areaOfCircle(i);
+printf ("The area is %f if the radius is %f\n", poo, i);
+}
 
-r = r + 1;
-}}
+}
